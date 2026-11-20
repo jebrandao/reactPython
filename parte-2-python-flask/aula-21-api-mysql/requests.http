@@ -1,0 +1,23 @@
+### Testes da API de usuários (extensão "REST Client" do VS Code)
+@url = http://127.0.0.1:5000
+
+### Listar
+GET {{url}}/usuarios
+
+### Buscar por id
+GET {{url}}/usuarios/1
+
+### Criar
+POST {{url}}/usuarios
+Content-Type: application/json
+
+{ "nome": "Ana", "senha": "123" }
+
+### Editar
+PUT {{url}}/usuarios/1
+Content-Type: application/json
+
+{ "nome": "Ana Souza" }
+
+### Excluir
+DELETE {{url}}/usuarios/1

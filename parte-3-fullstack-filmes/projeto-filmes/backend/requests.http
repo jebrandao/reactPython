@@ -1,0 +1,32 @@
+### Testes manuais da API (extensão "REST Client" do VS Code; também serve de roteiro para o Insomnia)
+@url = http://127.0.0.1:5000
+
+### Listar todos os filmes
+GET {{url}}/filme
+
+### Buscar um filme pelo id
+GET {{url}}/filme/1
+
+### Cadastrar um filme
+POST {{url}}/filme
+Content-Type: application/json
+
+{
+  "nome": "A Chegada",
+  "descricao": "Uma linguista tenta se comunicar com alienígenas.",
+  "ano_lancamento": "2016",
+  "url_imagem": "https://exemplo.com/chegada.jpg",
+  "genero": "Ficção"
+}
+
+### Editar apenas o gênero
+PUT {{url}}/filme/1
+Content-Type: application/json
+
+{ "genero": "Drama" }
+
+### Excluir
+DELETE {{url}}/filme/1
+
+### Pesquisar por nome (começa com...)
+GET {{url}}/search?query=Matrix

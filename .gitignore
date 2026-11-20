@@ -1,0 +1,24 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+instance/
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+*.log
+
+# Segredos e configurações locais (os .env.example são versionados)
+.env
+.env.local
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

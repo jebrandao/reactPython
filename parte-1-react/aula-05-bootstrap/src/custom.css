@@ -1,0 +1,8 @@
+/* Cores que não existem no Bootstrap: criamos a nossa própria classe */
+.texto-senai {
+  color: #0570b5;
+}
+
+.fundo-senai {
+  background-color: #cdebfe;
+}

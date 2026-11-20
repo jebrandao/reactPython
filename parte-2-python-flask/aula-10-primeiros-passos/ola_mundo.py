@@ -1,0 +1,5 @@
+print("Olá, mundo!")
+print("-----Cálculos abaixo-----")
+print(9 + 3)
+print(3 - 1)
+print(8 * 27)
